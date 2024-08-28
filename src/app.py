@@ -192,7 +192,7 @@ if uploaded_file is not None:
             st.markdown('''You forgot to hit the "Show analysis" button ✌️ or Data Processing...😀''')
 
     except Exception as e:
-    st.markdown(f"An error occurred: {e}")
+            st.markdown(f"An error occurred: {e}")
 
 
 
