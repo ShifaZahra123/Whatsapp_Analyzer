@@ -36,9 +36,16 @@ if uploaded_file is not None:
         # preprocessing data, making data frame
         df = preprocessor.preprocess(data)
 
-        # fetch unique user name and arrange to show in select box
+        # Fetch unique user names and arrange them to show in the select box
         user_list = df['users'].unique().tolist()
-        user_list.remove("Group_notifications")
+
+# Convert everything to lowercase for a case-insensitive check
+        user_list_lower = [user.lower() for user in user_list]
+
+# Check if "group_notification" exists in the list before trying to remove it
+     if "group_notification" in user_list_lower:
+        user_list.pop(user_list_lower.index("group_notification"))
+
         user_list.sort()
         user_list.insert(0, "Overall")
 
