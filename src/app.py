@@ -35,8 +35,9 @@ if uploaded_file is not None:
             # Ensure all values in the 'users' column are strings
   #  df['users'] = df['users'].astype(str)
         # preprocessing data, making data frame
+        
+        df = preprocessor.preprocess(data)
         df['users'] = df['users'].astype(str)
-        # df = preprocessor.preprocess(data)
 
         # Fetch unique user names and arrange them to show in the select box
         user_list = df['users'].unique().tolist()
