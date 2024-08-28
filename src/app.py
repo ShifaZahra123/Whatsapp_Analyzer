@@ -43,8 +43,8 @@ if uploaded_file is not None:
         user_list_lower = [user.lower() for user in user_list]
 
 # Check if "group_notification" exists in the list before trying to remove it
-     if "group_notification" in user_list_lower:
-           user_list.pop(user_list_lower.index("group_notification"))
+        if "group_notification" in user_list_lower:
+            user_list.pop(user_list_lower.index("group_notification"))
 
         user_list.sort()
         user_list.insert(0, "Overall")
