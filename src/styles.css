@@ -1,0 +1,97 @@
+/*Title part of the app*/
+.title{
+    color:lime;
+    text-align: center;
+    font-size: 2.5rem;
+    transform:
+        perspective(750px)
+        translate3d(0px, 0px, -250px)
+        rotateX(27deg)
+        scale(0.9, 0.9);
+      border-radius: 20px;
+      border: 2.5px solid grey;
+
+  box-shadow: 0px 20px 100px #555;
+  transition:0.5s ease all;
+
+  &:hover {
+    transform:
+      rotate(0deg)
+      scale(1)
+      translateY(10px);
+  }
+   &:hover{
+        background: #03e9f4;
+        color: #050801;
+        transform:
+          rotate(0deg)
+          scale(1)
+          translateY(10px);
+        box-shadow: 0 0 5px #050801,
+                    0 0 25px #555555,
+                    0 0 50px #03e9f4,
+                    0 0 200px #03e9f4;
+         -webkit-box-reflect:below 1px linear-gradient(transparent, #0005);
+    }
+}
+
+
+
+/*All div row wise*/
+div.css-ocqkz7.esravye3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*height: 100px;*/
+    background: #050801;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    padding: 5px;
+}
+
+/*Heading div*/
+@import url(https://fonts.googleapis.com/css?family=Lato);
+span.css-10trblm.eqr7zpz0{
+   text-align: center;
+}
+
+
+/*col wise div*/
+div.css-j5r0tf.esravye1{
+    position: relative;
+    display: inline-block;
+    /*padding: 5px 5px;*/
+    /*margin: 5px;*/
+    color: #03e9f4;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.5s;
+    /*letter-spacing: 4px;*/
+    overflow: visible;
+
+    &:hover{
+        background: #03e9f4;
+        color: #050801;
+        box-shadow: 0 0 5px #03e9f4,
+                    0 0 25px #03e9f4,
+                    0 0 50px #03e9f4,
+                    0 0 200px #03e9f4;
+         -webkit-box-reflect:below 1px linear-gradient(transparent, #0005);
+    }
+    &:nth-child(1){
+        filter: hue-rotate(270deg);
+    }
+     &:nth-child(2){
+        filter: hue-rotate(190deg);
+    }
+    &:nth-child(3){
+        filter: hue-rotate(230deg);
+    }
+    &:nth-child(4){
+        filter: hue-rotate(170deg);
+    }
+    &:nth-child(5){
+        filter: hue-rotate(340deg);
+    }
+}
